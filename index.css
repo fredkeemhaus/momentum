@@ -2,18 +2,88 @@
     padding: 0;
     margin: 0;
 }
+body,
+html{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+html{
+    background-color: #333333;
+}
 body{
-    background-color: #2c3e50;
+    
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+li{
+    all: unset
+}
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .btn {
     cursor: pointer;
 }
 h1{
-    color: #34495e;
+    font-size: 100px;
+    color: #fff;
     transition : color .5s ease-in-out;
-    
 }
-
+h4{
+    font-size: 70px;
+    color: #fff;
+}
+.js-weather{
+    text-align: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+}
+input:focus,
+input:active {
+  outline: none;
+}
+input{
+    all: unset;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+::placeholder {
+    color: #fff;
+    opacity: .5; /* Firefox */
+}
+ul li{
+    color: #fff;
+    font-size: 20px;
+    vertical-align: middle;
+}
+button{
+    all: unset;
+    width: 10px;
+    height: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
 .clicked{
     color : #7f8c8d;
 }
@@ -37,11 +107,15 @@ h1{
 }
 
 .bgImage{
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
+    background-size: 100% 100%;
     animation: fadeIn 0.5s linear;
+    background-size: cover;
+    background-position: center center;
+    
 }
