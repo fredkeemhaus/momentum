@@ -4,11 +4,6 @@
 }
 body{
     background-color: #ecf0f1;
-    width: 100%;
-}
-.wrap {
-    width: 100%;
-    text-align: center;
 }
 .btn {
     cursor: pointer;
